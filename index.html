@@ -115,7 +115,7 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 					   					<div class="desc">
 						   					<h1>Hi! <br>I'm Shubham</h1>
 						   					<!-- <h2>100% html5 bootstrap templates Made by <a href="https://colorlib.com/" target="_blank">colorlib.com</a></h2> -->
-												<p><a target="_blank" href="https://rxresu.me/kapoorshubham483/full-stack-web-developer" class="btn btn-primary btn-learn">Download CV <i class="icon-download4"></i></a></p>
+												<p class="btn btn-primary btn-learn" onclick="downloadPDF(`/pdf/Shubham_Kapoor_Resume.pdf`)">Download CV <i class="icon-download4"></i></p>
 											</div>
 					   				</div>
 					   			</div>
@@ -318,7 +318,7 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
 							<p>Competent in both Frontend and Backend development. Here are some skills that I am implementing in my Projects. </p>
 						</div>
-						<h2 class="colorlib-heading animate-box">Frontend Skills</h2>
+						<h2 style="margin-left: 1em;" class="colorlib-heading animate-box">Frontend Skills</h2>
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
 							<div class="progress-wrap">
 								<h3>Javascript</h3>
@@ -387,7 +387,7 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 						</div>
 					</div>
 					<div class="row">
-						<h2 class="colorlib-heading animate-box">Backend Skills</h2>
+						<h2 style="margin-left: 1em;" class="colorlib-heading animate-box">Backend Skills</h2>
 						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
 							<div class="progress-wrap">
 								<h3>NodeJS</h3>
@@ -415,6 +415,17 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 								<h3>MongoDb</h3>
 								<div class="progress">
 								 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="85"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
+								    <span></span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>Postman</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
 								  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
 								    <span></span>
 								  	</div>
@@ -583,11 +594,11 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 							<div class="project" style="background-image: url(images/rentomojo.png);">
 								<div class="desc">
 									<div class="con">
-										<h3><a >Rentomojo.com Clone</a></h3>
+										<!-- <h3><a >Rentomojo.com Clone</a></h3>
 										<p class="icon">
 											<span><a target="blank" href="https://github.com/DeveloperShubhamKapoor/rentomojo-clone"><i class="icon-github"></i></a></span>
 											<span><a  target="blank" href="https://rentomojo-clone-shubhamkapoor.netlify.app/">Website Link<i class="icon-attachment"></i></a></span>
-										</p>
+										</p> -->
 									</div>
 									<!-- <h3>Netmeds Clone</h3>
 									<p>This website is a clone of Netmeds.com where you can signin,signup add products to cart and place order. </p>
@@ -610,11 +621,11 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 							<div class="project" style="background-image: url(images/Tmetric.png);">
 								<div class="desc">
 									<div class="con">
-										<h3><a >Tmetric.com Clone</a></h3>
+										<!-- <h3><a >Tmetric.com Clone</a></h3>
 										<p class="icon">
 											<span><a target="blank" href="https://github.com/ayaznoori/TMetric-Clone"><i class="icon-github"></i></a></span>
 											<span><a  target="blank" href="https://tmetric.netlify.app/">Website Link<i class="icon-attachment"></i></a></span>
-										</p>
+										</p> -->
 									</div>
 									<!-- <h3>Netmeds Clone</h3>
 									<p>This website is a clone of Netmeds.com where you can signin,signup add products to cart and place order. </p>
@@ -636,14 +647,14 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 							<div class="project" style="background-image: url(images/Sugar.png);">
 								<div class="desc">
 									<div class="con">
-										<h3><a >Sugar Cosmetics Clone</a></h3>
+										<!-- <h3><a >Sugar Cosmetics Clone</a></h3>
 										<p class="icon">
 											<span><a target="_blank" href="https://github.com/Nachiketlele/Sugar"><i class="icon-github"></i></a></span>
 											<span><a target="_blank" href="https://sugars.netlify.app/">Website Link<i class="icon-attachment"></i></a> </span>
 
 											<!-- <span><a href="#"><i class="icon-eye"></i> 100</a></span>
 											<span><a href="#"><i class="icon-heart"></i> 49</a></span> -->
-										</p>
+										</p> -->
 									</div>
 									<!-- <h3>Sugar Cosmetics Clone</h3>
 									<p>This website is a clone of Sugar Cosmetics a fully functional website where you can signin,signup add products to cart and place order. </p>
@@ -665,15 +676,15 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 							<div class="project" style="background-image: url(images/bitrix24.png);">
 								<div class="desc">
 									<div class="con">
-										<h3><a>Bitrix24.com Clone</a></h3>
+										<!-- <h3><a>Bitrix24.com Clone</a></h3>
 										<!-- <span>Application</span> -->
-										<p class="icon">
-											<span><a target="_blank" href="https://github.com/DeveloperShubhamKapoor/brawny-base-7995"><i class="icon-github"></i></a></span>
-											<span><a target="_blank" href="https://bitrixclone.netlify.app/">Website Link<i class="icon-attachment"></i></a> </span>
+										<!-- <p class="icon"> -->
+											<!-- <span><a target="_blank" href="https://github.com/DeveloperShubhamKapoor/brawny-base-7995"><i class="icon-github"></i></a></span> -->
+											<!-- <span><a target="_blank" href="https://bitrixclone.netlify.app/">Website Link<i class="icon-attachment"></i></a> </span> -->
 
 											<!-- <span><a href="#"><i class="icon-eye"></i> 100</a></span>
 											<span><a href="#"><i class="icon-heart"></i> 49</a></span> -->
-										</p>
+										<!-- </p> -->
 									</div>
 								</div>
 							</div>
@@ -833,6 +844,25 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 	></script>
 	<script>
 		GitHubCalendar(".calendar", "DeveloperShubhamKapoor", { responsive: true });
+	</script>
+	<script>
+		function downloadPDF(url) {
+			const newTab = window.open(); // open a new tab
+			newTab.document.write('Downloading PDF...'); // show a message to the user
+
+			// initiate download of PDF file
+			const downloadAnchor = document.createElement('a');
+			downloadAnchor.setAttribute('target',"blank")
+			downloadAnchor.setAttribute('href', url);
+			downloadAnchor.setAttribute('download', "Shubham_Kapoor_Resume");
+			downloadAnchor.click();
+
+			// open the downloaded PDF file in the new tab
+			setTimeout(() => {
+				newTab.location.href = url;
+			}, 5000); // wait for 5 seconds to allow the file to download
+}
+
 	</script>
 </html>
 

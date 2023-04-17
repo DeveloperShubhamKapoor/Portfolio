@@ -33,6 +33,8 @@ a {
 
 p {
   margin-bottom: 1.5em; }
+  
+  
 
 h1, h2, h3, h4, h5, h6 {
   color: #000;
@@ -415,16 +417,17 @@ body.offcanvas {
     display: block; }
   @media screen and (max-width: 768px) {
     .colorlib-heading {
-      margin-bottom: 1em;
-    margin-left:1em } }
+      margin-bottom: 1em; } }
 
+      
 .heading-meta {
   margin-bottom: 10px;
   display: block;
-  font-size: 10px;
+  font-size: 12px;
   text-transform: uppercase;
   color: #999999;
-  font-weight: 500;
+  color:black;
+  font-weight: 700;
   letter-spacing: 5px; }
 
 .about-img {
@@ -438,6 +441,12 @@ body.offcanvas {
   letter-spacing: 5px;
   font-weight: 500; }
 
+  @media screen and (min-width:421px) and (max-width:780px){
+    p{font-size:28px}
+    .heading-meta{ font-size:20px}
+    .colorlib-heading{font-size:25px}
+    strong{font-size:30px}
+  }
 .hire {
   padding: 2em;
   background: #f9bf3f; }
