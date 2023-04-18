@@ -137,7 +137,7 @@ figure {
         margin: 0 0 10px 0;
         padding: 0;
         list-style: none;
-        font-size: 12px;
+        font-size: 15px;
         font-weight: 500;
         text-transform: uppercase;
         letter-spacing: 1px; }
@@ -441,12 +441,7 @@ body.offcanvas {
   letter-spacing: 5px;
   font-weight: 500; }
 
-  @media screen and (min-width:421px) and (max-width:780px){
-    p{font-size:28px}
-    .heading-meta{ font-size:20px}
-    .colorlib-heading{font-size:25px}
-    strong{font-size:30px}
-  }
+  
 .hire {
   padding: 2em;
   background: #f9bf3f; }
@@ -742,7 +737,15 @@ body.offcanvas {
   font-size: 16px;
   font-family: "Quicksand", Arial, sans-serif;
   margin-bottom: 10px; }
-
+  @media screen and (min-width:421px) and (max-width:780px){
+    p{font-size:28px}
+    .heading-meta{ font-size:20px}
+    .colorlib-heading{font-size:25px}
+    strong{font-size:30px}
+    .progress-wrap h3{
+      font-size: 25px;
+    }
+  }
 .progress {
   height: 6px;
   -webkit-box-shadow: none;

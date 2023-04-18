@@ -115,7 +115,7 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 					   					<div class="desc">
 						   					<h1>Hi! <br>I'm Shubham</h1>
 						   					<!-- <h2>100% html5 bootstrap templates Made by <a href="https://colorlib.com/" target="_blank">colorlib.com</a></h2> -->
-												<p class="btn btn-primary btn-learn" onclick="downloadPDF(`/pdf/Shubham_Kapoor_Resume.pdf`)">Download CV <i class="icon-download4"></i></p>
+												<p class="btn btn-primary btn-learn" onclick="downloadAndOpenResume()">Download CV <i class="icon-download4"></i></p>
 											</div>
 					   				</div>
 					   			</div>
@@ -846,23 +846,23 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 		GitHubCalendar(".calendar", "DeveloperShubhamKapoor", { responsive: true });
 	</script>
 	<script>
-		function downloadPDF(url) {
-			const newTab = window.open(); // open a new tab
-			newTab.document.write('Downloading PDF...'); // show a message to the user
-
-			// initiate download of PDF file
-			const downloadAnchor = document.createElement('a');
-			downloadAnchor.setAttribute('target',"blank")
-			downloadAnchor.setAttribute('href', url);
-			downloadAnchor.setAttribute('download', "Shubham_Kapoor_Resume");
-			downloadAnchor.click();
-
-			// open the downloaded PDF file in the new tab
-			setTimeout(() => {
-				newTab.location.href = url;
-			}, 5000); // wait for 5 seconds to allow the file to download
-}
-
+		const downloadAndOpenResume = () => {
+  let downloadLink = document.createElement("a");
+  downloadLink.href =
+    "https://drive.google.com/file/d/1nJzUpksH6OZTFB3P0PuYTHL2QIq69cji/view?usp=share_link";
+  downloadLink.download = "Shubham_Kapoor_Resume.pdf";
+//   downloadLink.target="blank"
+  document.body.appendChild(downloadLink);
+  downloadLink.click();
+  viewResume();
+//   document.body.removeChild(downloadLink);
+};
+const viewResume = () => {
+  window.open(
+    "https://drive.google.com/file/d/1nJzUpksH6OZTFB3P0PuYTHL2QIq69cji/view?usp=share_link"
+  );
+};
+// https://drive.google.com/file/d/1nJzUpksH6OZTFB3P0PuYTHL2QIq69cji/view?usp=share_link
 	</script>
 </html>
 
