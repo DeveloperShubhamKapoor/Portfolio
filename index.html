@@ -23,13 +23,6 @@
 	<!-- Include the library. -->
 	
 
-<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-	<link
-	rel="stylesheet"
-	href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-	/>
-
-
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
@@ -55,7 +48,9 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
-	
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -115,7 +110,7 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 					   					<div class="desc">
 						   					<h1>Hi! <br>I'm Shubham</h1>
 						   					<!-- <h2>100% html5 bootstrap templates Made by <a href="https://colorlib.com/" target="_blank">colorlib.com</a></h2> -->
-												<p class="btn btn-primary btn-learn" onclick="downloadAndOpenResume()">Download/View CV <i class="icon-download4"></i></p>
+												<p id="generate-pdf" class="btn btn-primary btn-learn">Download/View CV <i class="icon-download4"></i></p>
 											</div>
 					   				</div>
 					   			</div>
@@ -609,7 +604,7 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 									<p>Masai Learn is a learning platform where you can learn through different tutorials on different topics.</p>
 									<p><b>Tech Stack:</b> React | Chakra UI | Redux | Java | Springboot</p>
 									<p class="icon">
-										<span><a target="blank" href="http://13.233.50.68/"><i class="icon-attachment"></i></a> </span>
+										<span><a target="blank" href="http://13.232.210.184/"><i class="icon-attachment"></i></a> </span>
 
 										<!-- <span><a href="#"><i class="icon-eye"></i> 100</a></span>
 										<span><a href="#"><i class="icon-heart"></i> 49</a></span> -->
@@ -788,7 +783,8 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 				</div>
 			</section>
 
-			<div class="calendar">
+			<div style="width:100%; height: 180px; padding: 5px; border: 1px solid grey;">
+				<img style="width: 95%; margin: auto; height: 100%;" src="http://ghchart.rshah.org/DeveloperShubhamKapoor" alt="DeveloperShubhamKapoor's Github chart" />
 				<!-- Loading stuff -->
 				
 			</div>
@@ -889,13 +885,10 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 	<script src="js/main.js"></script>
 
 	</body>
-	<script
-	src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
-	></script>
-	<script>
+	<!-- <script>
 		GitHubCalendar(".calendar", "DeveloperShubhamKapoor", { responsive: true });
-	</script>
-	<script>
+	</script> -->
+	<!-- <script>
 		const downloadAndOpenResume = () => {
 			const fileId = "1Kx3gztd9J75HiJmW1ZSkEtBjXaVveKnK";
         const downloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
@@ -914,6 +907,23 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
         const viewUrl = "https://drive.google.com/file/d/1Kx3gztd9J75HiJmW1ZSkEtBjXaVveKnK/view?usp=share_link";
         window.open(viewUrl, "_blank");
     };
+	</script> -->
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			// Get a reference to the button element
+			var generatePdfButton = document.getElementById("generate-pdf");
+			
+			// Add a click event listener to the button
+			generatePdfButton.addEventListener("click", function () {
+				// Open the URL in a new window
+				var resumeUrl = "https://rxresu.me/kapoorshubham483/full-stack-web-developer";
+				window.open(resumeUrl, "_blank");
+				
+				// Generate PDF from the webpage content
+				html2pdf().from(resumeUrl).save("Shubham_Kapoor_resume.pdf");
+			});
+		});
 	</script>
+	
 </html>
 
